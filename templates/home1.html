@@ -1,0 +1,162 @@
+
+<html>
+
+<head>
+    <title>Fake News Detector</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!--font awesome (Home)  -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+    <!-- fav icon ($B)-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html{
+            position: relative;
+        }
+        body {font-family: 'Montserrat', sans-serif;
+          text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+          color: white;
+          font-weight: bold;
+        }
+        a:hover{
+          color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .container{
+          margin-top: 60px;
+          /* width: 50%; */
+        }
+        .btn{
+          width: 75%;
+          margin: 0 auto;
+        }
+        label{
+          text-align: left;
+          color: #fd183d;
+          font-weight: bold;
+        }
+        h1,p{
+          font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .first{margin-top: 5px;
+          margin-bottom: 10px;
+        }
+        .second{margin-bottom: 5px;
+          margin-top: 10px;}
+        h1{font-weight: bold;
+          }
+        .top{
+            padding: 10px;
+            color: white;
+            font-size: 30px;
+            background-color: #D71536;
+        }
+
+        /* .navbar-nav .nav-item{
+            font-size: 20px;
+        } */
+
+      .name{
+        font-size: 1rem;
+      }
+
+        .card-body{
+            border: 2px solid #fd183d;
+            box-shadow: 0 0 5px #fd183d;
+        }
+
+        .card-body:hover{
+            box-shadow: 0 0 10px #fd183d;
+        }
+        input{margin-bottom: 10px;}
+        textarea, input{
+            border: 2px solid #fd183d;
+        }
+
+        ul li{
+            display: inline;
+            list-style: none;
+        }
+
+        .body-links .fa {
+            color: #ff4c68 !important;
+            font-size: 30px;
+        }
+        .triangle-down {
+	           width: 0;
+	            height: 0;
+	             border-left: 35px solid transparent;
+	              border-right: 35px solid transparent;
+	              border-top: 60px solid #555;
+                margin-left: 10%;
+              }
+          .bottom{
+            margin-top: 5%;
+            background-color: #fd183d;
+          }
+
+        .body-links .fa:hover{
+            text-shadow: 0 0 10px #ff4c68;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top">
+      <h1>Fake News Detector</h1>
+      <center><p class="name">by Saera Banu (161019742004), NSAKCET</p></center>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <!-- <center><h1 class="title">FAKE NEWS DETECTOR</h1></center> -->
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form class="card card-body" action="" method="POST">
+
+                    <button class="first btn btn-danger" type="button" name="button"><a href="/text">Search via Text</a></button><br>
+                    <!-- <center><p class="or">OR</p></center> -->
+                    <button class="second btn btn-danger" type="button" name="button"><a href="/url">Search via URL</a></button>
+
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <center>
+                    <ul>
+                    </ul>
+                </center>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+<!-- <div class="bottom triangle-down"> -->
+
+</div>
+</body>
+
+</html>
